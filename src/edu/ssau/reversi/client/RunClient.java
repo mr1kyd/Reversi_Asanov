@@ -68,7 +68,9 @@ public class RunClient {
             }else{
                 System.out.println("The game is a tie");
             }
-
+            oos.close();
+            ois.close();
+            socket.close();
         } catch (IOException e) {
             System.out.println("Connection failed");
             e.printStackTrace();
